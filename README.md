@@ -1,5 +1,18 @@
 # Day 11 — Controlled Agent Security (2026)
 
+> **Học viên:** Hà Văn Khánh Đạt · **MSSV:** 2A202604074 · **Lớp:** K5-L3B
+>
+> **Cách chạy nhanh** (từ gốc repo, sau khi tạo `.env` từ `.env.example`):
+>
+> ```powershell
+> python -m venv .venv; .\.venv\Scripts\Activate.ps1; pip install -r requirements.txt
+> python src/main.py --part 3   # Blue: guardrails + pipeline → outputs/results.json
+> python src/main.py --part 4   # Red / Red Advance → outputs/attack_results.json
+> python scripts/grade.py --submission-dir . --out outputs/grade_report.json
+> ```
+>
+> Red Team provider khi chạy: `gemini` / `gemini-3.5-flash`. Bonus chọn: **B1** (leak Red).
+
 > 👤 **Hình thức:** bài tập **cá nhân** (1 người / 1 MSSV).  
 > 🎯 **Mục tiêu:** đóng vai **Blue Team** để học cách xây Guardrails phòng thủ, rồi đóng vai **Red Team** để tấn công agent **Red** hoặc **Red Advance**.  
 > ✅ Làm theo **Checkpoint 1 → 5** trong [`CHECKPOINTS.md`](CHECKPOINTS.md) · nộp theo [`SUBMISSION.md`](SUBMISSION.md).
